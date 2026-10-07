@@ -1,4 +1,4 @@
-package com.example.isp.service;
+﻿package com.example.isp.service;
 
 import com.example.isp.contract.CreditFacilityManageable;
 import com.example.isp.dto.CreditAdjustmentRequest;
@@ -13,8 +13,8 @@ public class BranchOperationsService implements CreditFacilityManageable {
 
     @Override
     public TransactionReceipt adjustOverdraftLimit(CreditAdjustmentRequest request) {
-        System.out.println("Branch Officer " + request.officerEmployeeId() +
-                " authorized new OD limit of $" + request.newOverdraftLimit() +
+        System.out.println("Branch Officer " + request.officerEmployeeId() + 
+                " authorized new OD limit of $" + request.newOverdraftLimit() + 
                 " for account " + request.accountId());
 
         return new TransactionReceipt(

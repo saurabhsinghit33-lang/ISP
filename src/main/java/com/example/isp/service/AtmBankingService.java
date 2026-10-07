@@ -1,4 +1,4 @@
-package com.example.isp.service;
+﻿package com.example.isp.service;
 
 import com.example.isp.contract.CashWithdrawable;
 import com.example.isp.dto.CashWithdrawalRequest;
@@ -13,9 +13,7 @@ public class AtmBankingService implements CashWithdrawable {
 
     @Override
     public TransactionReceipt withdrawCash(CashWithdrawalRequest request) {
-        // Physical ATM cash dispensation business logic
         System.out.println("Dispensing physical cash of $" + request.amount() + " from ATM: " + request.atmTerminalId());
-
         return new TransactionReceipt(
                 "ATM-" + UUID.randomUUID().toString().substring(0, 8),
                 request.accountId(),

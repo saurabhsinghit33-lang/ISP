@@ -1,4 +1,4 @@
-package com.example.isp.controller;
+﻿package com.example.isp.controller;
 
 import com.example.isp.contract.CashWithdrawable;
 import com.example.isp.dto.CashWithdrawalRequest;
@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/v1/atm")
 public class AtmController {
 
-    // ISP in action: Controller only knows about cash withdrawal operations
     private final CashWithdrawable cashService;
 
     public AtmController(CashWithdrawable cashService) {
